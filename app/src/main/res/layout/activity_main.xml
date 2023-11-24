@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="311dp"
+        android:layout_height="275dp"
+        android:layout_marginTop="-19dp"
+
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/mayusculasTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mayúsculas"
+        android:layout_marginTop="0dp"/>
+
+    <Spinner
+        android:id="@+id/mayusculasSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mayusculasTitulo"
+        android:layout_marginTop="0dp"
+        android:entries="@array/opciones_cantidad" />
+
+    <TextView
+        android:id="@+id/minusculasTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mayusculasSpinner"
+        android:layout_marginTop="0dp"
+        android:text="Minúsculas" />
+
+    <Spinner
+        android:id="@+id/minusculasSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/minusculasTitulo"
+        android:layout_marginTop="0dp"
+        android:entries="@array/opciones_cantidad" />
+
+    <TextView
+        android:id="@+id/numerosTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/minusculasSpinner"
+        android:layout_marginTop="0dp"
+        android:text="Números" />
+
+    <Spinner
+        android:id="@+id/numerosSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/numerosTitulo"
+        android:layout_marginTop="0dp"
+        android:entries="@array/opciones_cantidad" />
+
+    <Button
+        android:id="@+id/generarButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/numerosSpinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="Generar Contraseña"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/borrarButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/generarButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Borrar Contraseña"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/contrasenaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/borrarButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/ultimaContrasenaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contrasenaTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/cerrarSesionButton"
+        android:layout_width="33dp"
+        android:layout_height="36dp"
+        android:layout_gravity="end|top"
+        android:layout_marginTop="-690dp"
+        android:layout_marginEnd="0dp"
+        android:src="@drawable/exit" />
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">APPFINAL</string>
+    <string name="selecciona_mayusculas">Selecciona Mayúsculas</string>
+    <string name="selecciona_minusculas">Selecciona Minúsculas</string>
+    <string name="selecciona_numeros">Selecciona Números</string>
+
+</resources>
